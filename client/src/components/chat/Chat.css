@@ -1,0 +1,74 @@
+.chat-container {
+    display: flex;
+    
+    height: 100vh;
+}
+
+.side-menu {
+    flex: 1;
+    background-color: #f0f0f0;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.side-menu div{
+    margin-bottom: 10px;
+}
+
+.side-menu div div.selected {
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+.chat-area {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.header {
+    text-align: center;
+}
+
+.message-list {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 20px; /* Push the message list to the top */
+}
+
+.message {
+    margin-bottom: 10px;
+}
+
+.input-area {
+    display: flex;
+    align-items: center; /* Align input area content vertically */
+    margin-top: 10px; /* Add some space between message list and input area */
+}
+
+.input-area input {
+    flex: 1; /* Take up remaining space */
+    margin-right: 10px; /* Add space between input and button */
+    font-size: medium;
+    padding: 5px;
+}
+.input-area select {
+    flex: 1; /* Take up remaining space */
+    margin-right: 10px; /* Add space between input and button */
+    font-size: medium;
+    padding: 5px;
+}
+.input-area button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px; /* Add padding for better appearance */
+    cursor: pointer;
+}
+
+.input-area button:hover {
+    background-color: #0056b3;
+}
